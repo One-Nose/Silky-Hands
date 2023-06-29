@@ -2,20 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:ice"
-        }
-      ],
-      "functions": [
-        {
-          "function": "minecraft:set_nbt",
-          "tag": "{SilkyHandsIce: 1b}"
-        }
-      ],
       "conditions": [
         {
           "condition": "minecraft:alternative",
@@ -42,7 +29,20 @@
             }
           ]
         }
-      ]
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ice"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{SilkyHandsIce: 1b}"
+        }
+      ],
+      "rolls": 1.0
     }
   ]
 }

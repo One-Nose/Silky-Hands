@@ -2,14 +2,182 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {}
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:alternatives",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "1"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 1.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:snowball"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "2"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 2.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:snowball"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "3"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 3.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:snowball"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "4"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 4.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:snowball"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "5"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 5.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:snowball"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "6"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 6.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:snowball"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "7"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 7.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:snowball"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "8"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 8.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:snowball"
+                }
+              ],
               "conditions": [
                 {
                   "condition": "minecraft:inverted",
@@ -39,152 +207,6 @@
                     ]
                   }
                 }
-              ],
-              "children": [
-                {
-                  "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:block_state_property",
-                      "block": "minecraft:snow",
-                      "properties": {
-                        "layers": "1"
-                      }
-                    }
-                  ],
-                  "name": "minecraft:snowball"
-                },
-                {
-                  "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:block_state_property",
-                      "block": "minecraft:snow",
-                      "properties": {
-                        "layers": "2"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "function": "minecraft:set_count",
-                      "count": 2.0,
-                      "add": false
-                    }
-                  ],
-                  "name": "minecraft:snowball"
-                },
-                {
-                  "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:block_state_property",
-                      "block": "minecraft:snow",
-                      "properties": {
-                        "layers": "3"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "function": "minecraft:set_count",
-                      "count": 3.0,
-                      "add": false
-                    }
-                  ],
-                  "name": "minecraft:snowball"
-                },
-                {
-                  "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:block_state_property",
-                      "block": "minecraft:snow",
-                      "properties": {
-                        "layers": "4"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "function": "minecraft:set_count",
-                      "count": 4.0,
-                      "add": false
-                    }
-                  ],
-                  "name": "minecraft:snowball"
-                },
-                {
-                  "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:block_state_property",
-                      "block": "minecraft:snow",
-                      "properties": {
-                        "layers": "5"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "function": "minecraft:set_count",
-                      "count": 5.0,
-                      "add": false
-                    }
-                  ],
-                  "name": "minecraft:snowball"
-                },
-                {
-                  "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:block_state_property",
-                      "block": "minecraft:snow",
-                      "properties": {
-                        "layers": "6"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "function": "minecraft:set_count",
-                      "count": 6.0,
-                      "add": false
-                    }
-                  ],
-                  "name": "minecraft:snowball"
-                },
-                {
-                  "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "condition": "minecraft:block_state_property",
-                      "block": "minecraft:snow",
-                      "properties": {
-                        "layers": "7"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "function": "minecraft:set_count",
-                      "count": 7.0,
-                      "add": false
-                    }
-                  ],
-                  "name": "minecraft:snowball"
-                },
-                {
-                  "type": "minecraft:item",
-                  "functions": [
-                    {
-                      "function": "minecraft:set_count",
-                      "count": 8.0,
-                      "add": false
-                    }
-                  ],
-                  "name": "minecraft:snowball"
-                }
               ]
             },
             {
@@ -194,11 +216,18 @@
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "condition": "minecraft:block_state_property",
                       "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
                       "properties": {
                         "layers": "1"
                       }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 1.0,
+                      "function": "minecraft:set_count"
                     }
                   ],
                   "name": "minecraft:snow"
@@ -207,8 +236,8 @@
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "condition": "minecraft:block_state_property",
                       "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
                       "properties": {
                         "layers": "2"
                       }
@@ -216,9 +245,9 @@
                   ],
                   "functions": [
                     {
-                      "function": "minecraft:set_count",
+                      "add": false,
                       "count": 2.0,
-                      "add": false
+                      "function": "minecraft:set_count"
                     }
                   ],
                   "name": "minecraft:snow"
@@ -227,8 +256,8 @@
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "condition": "minecraft:block_state_property",
                       "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
                       "properties": {
                         "layers": "3"
                       }
@@ -236,9 +265,9 @@
                   ],
                   "functions": [
                     {
-                      "function": "minecraft:set_count",
+                      "add": false,
                       "count": 3.0,
-                      "add": false
+                      "function": "minecraft:set_count"
                     }
                   ],
                   "name": "minecraft:snow"
@@ -247,8 +276,8 @@
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "condition": "minecraft:block_state_property",
                       "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
                       "properties": {
                         "layers": "4"
                       }
@@ -256,9 +285,9 @@
                   ],
                   "functions": [
                     {
-                      "function": "minecraft:set_count",
+                      "add": false,
                       "count": 4.0,
-                      "add": false
+                      "function": "minecraft:set_count"
                     }
                   ],
                   "name": "minecraft:snow"
@@ -267,8 +296,8 @@
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "condition": "minecraft:block_state_property",
                       "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
                       "properties": {
                         "layers": "5"
                       }
@@ -276,9 +305,9 @@
                   ],
                   "functions": [
                     {
-                      "function": "minecraft:set_count",
+                      "add": false,
                       "count": 5.0,
-                      "add": false
+                      "function": "minecraft:set_count"
                     }
                   ],
                   "name": "minecraft:snow"
@@ -287,8 +316,8 @@
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "condition": "minecraft:block_state_property",
                       "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
                       "properties": {
                         "layers": "6"
                       }
@@ -296,9 +325,9 @@
                   ],
                   "functions": [
                     {
-                      "function": "minecraft:set_count",
+                      "add": false,
                       "count": 6.0,
-                      "add": false
+                      "function": "minecraft:set_count"
                     }
                   ],
                   "name": "minecraft:snow"
@@ -307,8 +336,8 @@
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "condition": "minecraft:block_state_property",
                       "block": "minecraft:snow",
+                      "condition": "minecraft:block_state_property",
                       "properties": {
                         "layers": "7"
                       }
@@ -316,9 +345,9 @@
                   ],
                   "functions": [
                     {
-                      "function": "minecraft:set_count",
+                      "add": false,
                       "count": 7.0,
-                      "add": false
+                      "function": "minecraft:set_count"
                     }
                   ],
                   "name": "minecraft:snow"
@@ -332,13 +361,7 @@
           ]
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:entity_properties",
-          "predicate": {},
-          "entity": "this"
-        }
-      ]
+      "rolls": 1.0
     }
   ]
 }
