@@ -11,29 +11,32 @@
               "type": "minecraft:alternatives",
               "conditions": [
                 {
-                  "condition": "minecraft:alternative",
-                  "terms": [
-                    {
-                      "condition": "minecraft:match_tool",
-                      "predicate": {
-                        "enchantments": [
-                          {
-                            "enchantment": "minecraft:silk_touch",
-                            "levels": {
-                              "min": 1
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:alternative",
+                    "terms": [
+                      {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                          "enchantments": [
+                            {
+                              "enchantment": "minecraft:silk_touch",
+                              "levels": {
+                                "min": 1
+                              }
                             }
-                          }
-                        ]
+                          ]
+                        }
+                      },
+                      {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                          "nbt": "{Tags: [\"silky_hands\"]}"
+                        }
                       }
-                    },
-                    {
-                      "condition": "minecraft:entity_properties",
-                      "entity": "this",
-                      "predicate": {
-                        "nbt": "{Tags: [\"silky_hands\"]}"
-                      }
-                    }
-                  ]
+                    ]
+                  }
                 }
               ],
               "children": [
