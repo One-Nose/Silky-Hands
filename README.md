@@ -6,8 +6,9 @@ More details on [Planet Minecraft](https://www.planetminecraft.com/data-pack/sil
 
 ## Installation
 
-Choose your desired version from the [releases](https://github.com/One-Nose/Silky-Hands/releases) page.
+Go to the [releases](https://github.com/One-Nose/Silky-Hands/releases) page.
 Each version states the compatible Minecraft versions.
+Choose the latest version that is compatible with your desired Minecraft version.
 From the list of assets, download `Source code (zip)` and install it like any other data pack.
-If you never downloaded a data pack,
+If you have never downloaded a data pack,
 [here are the instructions](https://www.planetminecraft.com/blog/how-to-download-and-install-minecraft-data-packs/).
